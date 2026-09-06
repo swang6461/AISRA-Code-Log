@@ -11,9 +11,10 @@ IK_FK - calculates how to move the robot arm to a specific point in space (assum
 
 compensator - takes the numbers from IK_FK and compensates for difference between motor actuated and belt driven (assumes the arm being controlled is belt driven) (need to check)
 
-comm - ensures the arduino(s) are connected to the queen (assumes queen is laptop, later to be replaced with a raspi)
+comm - ensures the arduino(s) are connected to the queen (assumes queen is laptop, later to be replaced with a raspi). Communicates to the arduinos how to move to the desired location.
 
-arduino 1 - in charge of moving the arm (need to check)
+arduino 1 - in charge of moving the base (joint 0)
 
-arduino 2 - in charge of moving the base (need to check)
+arduino 2 - in charge of moving joints 1-3
 
+arduino 3 - in charge of powering the electromagnet on the tool changer (joint 4)
